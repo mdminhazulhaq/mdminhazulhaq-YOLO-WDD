@@ -1,0 +1,9 @@
+# Dataset Path
+path: E:\yolov8-gpu\VSB_dataset
+
+train: images\train # relative to path
+val: images\val # relative to path
+test: images\test # relative to path
+
+# Class Names
+names: ['live knot', 'dead knot', 'knot with crack', 'crack', 'resin', 'knot missing', 'marrow']
