@@ -92,6 +92,7 @@ python detect.py --weights YOLOv7-tiny-best.pt source E:\yolov8-gpu\dataset\wood
 
 
 **Jetson Nano Setup**
+
 This setup is for the NVIDIA Jetson Nano, which features a Maxwell GPU, Quad-Core ARM Cortex-A57 Processor, and 4GB LPDDR4 Memory.
 
 1. Flash the microSD card with JetPack 4.4 – Download and write the JetPack 4.4 image to a microSD card using balenaEtcher or a similar tool.
