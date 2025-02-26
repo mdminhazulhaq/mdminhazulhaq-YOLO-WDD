@@ -1,7 +1,7 @@
 # YOLO-WDD
-YOLO-WDD is an improved YOLOv8 model based on improved feature extractor and enhanced small-size object prediction.
+YOLO-WDD is an improved YOLOv8 model based on an improved feature extractor and enhanced small-size object prediction.
 
-Requirements for setup
+**Requirements for setup**
 
 This setup is designed for a Windows 10 environment with an NVIDIA RTX A2000 GPU.
 
@@ -10,11 +10,11 @@ This setup is designed for a Windows 10 environment with an NVIDIA RTX A2000 GPU
 3. Install your GPU driver
 4. Check your compatible CUDA version and install CUDA. We have installed CUDA 12.8 version.
 5. Choose CUDNN compatible with the CUDA version. For CUDA 12.8, we chose the CUDNN 8.9.7 version.
-6. Press windows, then type anaconda, click anaconda navigator, click environments, click create, select python 3.10 version and create a new environment. We created an environment named yolov8.
-7. Open the anaconda promt, then activat yolov8 environmet by typing the below code and press enter
-
+6. Create a new environment in Anaconda Navigator (Select Python 3.10 version)
+7. Open the anaconda prompt, then activate the yolov8 environment by typing the below code and pressing enter
+'''
    activate yolov8
-   
+'''
 9. Navigate the directory of your computer, where the yolov8 root folder will be saved, we saved in E directory, so we type the below code and press enter
 
    E:
