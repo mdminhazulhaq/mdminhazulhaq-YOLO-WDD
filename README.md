@@ -12,9 +12,9 @@ This setup is designed for a Windows 10 environment with an NVIDIA RTX A2000 GPU
 5. Choose CUDNN compatible with the CUDA version. For CUDA 12.8, we chose the CUDNN 8.9.7 version.
 6. Create a new environment in Anaconda Navigator (Select Python 3.10 version)
 7. Open the anaconda prompt, then activate the yolov8 environment by typing the below code and pressing enter
-'''
+```
    activate yolov8
-'''
+```
 9. Navigate the directory of your computer, where the yolov8 root folder will be saved, we saved in E directory, so we type the below code and press enter
 
    E:
