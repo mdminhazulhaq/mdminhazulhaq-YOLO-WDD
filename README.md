@@ -89,3 +89,11 @@ python train.py --img 640 --batch 8 --epochs 300 --data dataset/wood-defect.yaml
 ```
 python detect.py --weights YOLOv7-tiny-best.pt source E:\yolov8-gpu\dataset\wood-defect-dataset\images\test
 ```
+
+
+**Jetson Nano Setup**
+This setup for NVIDIA Maxwell GPU, QUAD-Core ARM Cortex-A57 Processor, and 4GB LPDDR4 Memory
+
+1. Flash the SD card with Jetpack 4.4 version
+2. Configure the operating system on the nano
+
