@@ -24,7 +24,7 @@ This setup is designed for a Windows 10 environment with an NVIDIA RTX A2000 GPU
 ```
     mkdir yolov8-gpu
 ```
-13. Then install PyTorch which can run on the GPU. We have installed PyTorch 11.8 version. Please copy the link below, paste it to the anaconda promt, and press enter.
+13. Then install PyTorch which can run on the GPU. We have installed the PyTorch 11.8 version. Please copy the link below, paste it to the anaconda prompt, and press enter.
 ```
 pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 ```
@@ -36,7 +36,8 @@ pip3 install torch torchvision torchaudio --index-url https://download.pytorch.o
 **Data preparation**
 1.	Locate the image and label file of respective datasets in the ‘YOLO-WDD-Dataset’ folder.
 2.	Create a directory file for respective datasets that contains the images and their label text files.
-3.	Create .data files for both datasets and locate in the ‘cfg’ folder. The file contains the following information:
+3.	Create a data file to store the dataset path and class names. The contents of the data file should look as follows:
+   
 ```
 # Dataset Path
 path: E:\yolov8-gpu\dataset\wood-defect-dataset
@@ -98,10 +99,7 @@ This setup is for the NVIDIA Jetson Nano, which features a Maxwell GPU, Quad-Cor
 1. Flash the microSD card with JetPack 4.4 – Download and write the JetPack 4.4 image to a microSD card using balenaEtcher or a similar tool.
 2. Boot and install the OS on Jetson Nano – Insert the flashed microSD card into the Jetson Nano, connect peripherals (keyboard, mouse, display, and power supply), and follow the on-screen setup instructions to complete the installation.
 
-Now, open the Jetson Nano terminal and follow the steps one by one to configure it for testing YOLO model performance. A complete setup for yolov7 model.
-```
-
-```
+Now, open the Jetson Nano terminal and follow the steps one by one to configure it for testing YOLO model performance. A complete setup for the yolov7 model.
 
 ```
 mkdir yolo
