@@ -54,7 +54,7 @@ test: images\test # relative to path
 # Class Names
 names: ['live knot', 'dead knot', 'knot with crack', 'crack', 'resin', 'knot missing', 'marrow']
 ```
-4. Locate the YOLO-WDD.cfg file in the ‘cfg’ folder.
+
 
 **TRAINING AND TEST ON NVIDIA RTX A2000 GPU**
 
@@ -96,6 +96,10 @@ python train.py --img 640 --batch 8 --epochs 300 --data dataset/wood-defect.yaml
 ```
 python detect.py --weights YOLOv7-tiny-best.pt source E:\yolov8-gpu\dataset\wood-defect-dataset\images\test
 ```
+
+**THE TEST SETUP IN GOOGLE COLAB CAN BE FOUND IN THE GOOGLE COLAB NOTEBOOK FOLDER**
+
+
 
 
 **Jetson Nano Setup**
