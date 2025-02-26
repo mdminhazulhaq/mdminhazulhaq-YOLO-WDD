@@ -56,7 +56,7 @@ names: ['live knot', 'dead knot', 'knot with crack', 'crack', 'resin', 'knot mis
 ```
 4. Locate the YOLO-WDD.cfg file in the ‘cfg’ folder.
 
-
+**TRAINING AND TEST ON NVIDIA RTX A2000 GPU**
 **Training and test of the YOLO-WDD model and YOLOv8n model**
 1. Training command for YOLO-WDD model
 ```
