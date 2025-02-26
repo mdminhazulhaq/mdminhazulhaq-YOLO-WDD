@@ -33,6 +33,10 @@ pip3 install torch torchvision torchaudio --index-url https://download.pytorch.o
     pip install untralytics
 ```
 
+**Dataset**
+The dataset used in this study is large (9.41GB) and cannot be uploaded to the GitHub repository. Instead, it has been uploaded to Google Drive, and the link is provided inside the wood defect dataset folder. You can download it by clicking the link inside the folder.
+
+
 **Data preparation**
 1.	Locate the image and label file of respective datasets in the ‘YOLO-WDD-Dataset’ folder.
 2.	Create a directory file for respective datasets that contains the images and their label text files.
