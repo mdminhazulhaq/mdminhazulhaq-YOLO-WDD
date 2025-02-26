@@ -34,6 +34,7 @@ pip3 install torch torchvision torchaudio --index-url https://download.pytorch.o
 ```
 
 **Dataset**
+
 The dataset used in this study is large (9.41GB) and cannot be uploaded to the GitHub repository. Instead, it has been uploaded to Google Drive, and the link is provided inside the wood defect dataset folder. You can download it by clicking the link inside the folder.
 
 
