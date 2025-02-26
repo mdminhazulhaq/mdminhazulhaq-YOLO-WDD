@@ -97,4 +97,205 @@ This setup is for the NVIDIA Jetson Nano, which features a Maxwell GPU, Quad-Cor
 1. Flash the microSD card with JetPack 4.4 – Download and write the JetPack 4.4 image to a microSD card using balenaEtcher or a similar tool.
 2. Boot and install the OS on Jetson Nano – Insert the flashed microSD card into the Jetson Nano, connect peripherals (keyboard, mouse, display, and power supply), and follow the on-screen setup instructions to complete the installation.
 
-Now, open the Jetson Nano terminal and follow the steps one by one to configure it for testing YOLO model performance.
+Now, open the Jetson Nano terminal and follow the steps one by one to configure it for testing YOLO model performance. A complete setup for yolov7 model.
+```
+
+```
+
+```
+mkdir yolo
+```
+```
+cd yolo
+```
+```
+git clone https://github.com/WongKinYiu/yolov7.git
+```
+```
+cd ../
+```
+```
+sudo apt update
+```
+```
+cd yolo
+```
+```
+sudo apt update
+```
+```
+sudo apt install python3 python3-pip
+```
+```
+sudo pip3 install virtualenv virtualenvwrapper
+```
+```
+sudo apt update
+```
+```
+sudo apt install nano
+```
+```
+nano ~/.bashrc
+```
+```
+source ~/.bashrc
+```
+```
+mkvirtualenv yolov7 -p python3
+```
+```
+cd ~/.virtualenvs/yolov7/lib/python3.6/site-packages/
+```
+```
+ln -s /usr/lib/python3.6/dist-packages/cv2/python-3.6/cv2.cpython-36m-aarch64-linux-gnu.so cv2.so
+```
+```
+cd ~/.virtualenvs/yolov7/lib/python3.6/site-packages/
+```
+```
+sudo apt install libfreetype6-dev
+```
+```
+sudo apt-get install python3-dev
+```
+```
+pip3 install --upgrade pip setuptools wheel
+```
+```
+pip3 install numpy==1.19.4
+```
+```
+pip3 install matplotlib
+```
+```
+nano requirements.txt
+```
+```
+cd ../
+```
+```
+cd ../
+```
+```
+cd ../
+```
+```
+cd ../
+```
+```
+cd ../
+```
+```
+cd yolo
+```
+```
+cd yolov7
+```
+```
+nano requirements.txt
+```
+```
+pip install -r requirements.txt
+```
+```
+free -h
+```
+```
+cd ../
+```
+```
+cd ../
+```
+```
+sudo fallocate -l 4G /var/swapfile
+```
+```
+sudo chmod 600 /var/swapfile
+```
+```
+sudo mkswap /var/swapfile
+```
+```
+sudo swapon /var/swapfile
+```
+```
+cd yolo
+```
+```
+cd yolov7
+```
+```
+pip install -r requirements.txt
+```
+```
+pip3 install -U future psutil dataclasses typing-extensions pyyaml tqdm seaborn
+```
+```
+pip3 install Cython
+```
+```
+wget https://nvidia.box.com/shared/static/p57jwntv436lfrd78inwl7iml6p13fzh.whl -O torch-1.8.0-cp36-cp36m-linux_aarch64.whl
+```
+```
+pip3 install torch-1.8.0-cp36-cp36m-linux_aarch64.whl
+```
+```
+Processing ./torch-1.8.0-cp36-cp36m-linux_aarch64.whl
+```
+```
+python -c "import torch; print(torch.__version__)"
+```
+```
+sudo apt install libjpeg-dev zlib1g-dev libpython3-dev libavcodec-dev libavformat-dev libswscale-dev
+```
+```
+pip3 install --upgrade pillow
+```
+```
+git clone --branch v0.9.0 https://github.com/pytorch/vision torchvision
+```
+```
+cd torchvision
+```
+```
+export BUILD_VERSION=0.9.0
+```
+```
+python3 setup.py bdist_wheel
+```
+```
+cd dist/
+```
+```
+pip3 install torchvision-0.9.0-cp36-cp36m-linux_aarch64.whl
+```
+```
+Processing ./torchvision-0.9.0-cp36-cp36m-linux_aarch64.whl
+```
+```
+cd ..
+```
+```
+cd ..
+```
+```
+sudo rm -r torchvision
+```
+```
+python -c "import torchvision; print(torchvision.__version__)"
+```
+```
+wget https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7-tiny.pt
+```
+```
+wget https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7.pt
+```
+Detect objects using yolov7-tiny.pt pertained model on the COCO dataset.
+```
+python3 detect.py --weights yolov7-tiny.pt --conf 0.25 --img-size 640 --source inference/images/horses.jpg
+```
+Detect objects using the yolov7-tiny model pertained model on the Wood-Defect dataset.
+```
+python3 detect.py --weights yolov7-tiny-wood-best.pt --conf 0.25 --img-size 640 --source inference/images/106600059.bmp
+```
